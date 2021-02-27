@@ -233,3 +233,30 @@ void Grape::printPrecNode(int x)
     }
     cout << "}";
 }
+
+void Grape::configure(vector<vector<int>> graphConfig) {
+    if (graphConfig.size() > this->size) {
+        // re-allocation if total nodes is bigger than graph size
+        delete[] this->isNode;
+        delete[] this->adjMatrix;
+        this->size = graphConfig.size();
+        this->isNode = new bool[size];
+        this->adjMatrix = new bool[size*size];
+    }
+
+    int i;
+
+    // add all node based on graph configuration
+    for (i = 0; i < graphConfig.size(); i++) {
+        this->addNode(i);
+    }
+
+    // add all edges based on graph configuration
+    for (i = 0; i < this->n; i++) {
+        vector<int> edgesToThisNode = graphConfig.at(i);
+        int nEdge = edgesToThisNode.size();
+        for (int j = 0; j < nEdge; j++) {
+            this->addEdge(edgesToThisNode.at(j), i);
+        }
+    }
+}

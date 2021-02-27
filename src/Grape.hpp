@@ -2,6 +2,7 @@
 #define _GRAPH_HPP_
 
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -45,6 +46,8 @@ public:
     void printNode(int node);
     void printSuccNode(int node);
     void printPrecNode(int node);
+
+    void configure(vector<vector<int>> );
 };
 
 
