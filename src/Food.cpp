@@ -113,10 +113,10 @@ vector<vector<int>> setupConfig(vector<vector<string>> inputStream)
     return graphConfig;
 }
 
-vector<vector<int>> setup(vector<vector<string>> inputStream) 
+vector<vector<int>> setup() 
 {
     // setup function
-    list<list<int>> input;
+    vector<vector<string>> inputStream = inputFile();
 
     setupLabel(inputStream);
 
@@ -161,13 +161,12 @@ list<list<int>> topologicalSort(Grape& G)
 int main() 
 {
     Grape G;
-    list<list<int>> college;
 
-    vector<vector<int>> graphConfig = setup(inputFile());
+    vector<vector<int>> graphConfig = setup();
 
     G.configure(graphConfig);
 
-    college = topologicalSort(G);
+    list<list<int>> college = topologicalSort(G);
 
     printAllSemester(college);
 

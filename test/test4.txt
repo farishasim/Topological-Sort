@@ -1,0 +1,6 @@
+"Bahasa Inggris"
+"Kalkulus 1".
+"Matematika Diskrit", "Kalkulus 1".
+"Dasar Pemrograman".
+"Artificial Intelligence", "Strategi Algoritma".
+"Strategi Algoritma", "Dasar Pemrograman", "Matematika Diskrit".

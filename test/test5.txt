@@ -1,0 +1,9 @@
+"Artificial Intelligence", "Strategi Algoritma", "Probabilitas & Statistika".
+"Kalkulus 2", "Kalkulus 1".
+"Probabilitas & Statistika", "Kalkulus 2".
+"Matematika Diskrit", "Kalkulus 2".
+"Kalkulus 1".
+"Algoritma & Struktur Data", "Dasar Pemrograman".
+"Dasar Pemrograman".
+"Strategi Algoritma", "Matematika Diskrit", "Algoritma & Struktur Data".
+"Machine Learning", "Artificial Intelligence".

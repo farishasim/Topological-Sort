@@ -1,0 +1,7 @@
+"Dasar Pemrograman", "Pengenalan Komputasi".
+"Ilmu & Penggalian Data", "Basis Data".
+"Basis Data", "Pengenalan Komputasi".
+"Manajemen Basis Data", "Basis Data".
+"Pengenalan Komputasi".
+"Algoritma & Struktur Data", "Dasar Pemrograman".
+"Strategi Algoritma", "Algoritma & Struktur Data".

@@ -1,0 +1,6 @@
+"Rekayasa Perangkat Lunak", "Algoritma & Struktur Data".
+"Dasar Pemrograman", "Pengenalan Komputasi".
+"Algoritma & Struktur Data", "Dasar Pemrograman".
+"Organisasi Komputer", "Dasar Pemrograman".
+"Pengenalan Komputasi".
+"Sistem Operasi", "Organisasi Komputer".
