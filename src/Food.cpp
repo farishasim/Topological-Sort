@@ -42,10 +42,10 @@ vector<string> splitString(string str, string separator)
 }
 
 //****** Input/Output Function ******//
-vector<vector<string>> inputFile() 
+vector<vector<string> > inputFile() 
 {
     string filename;
-    vector<vector<string>> inputStream;
+    vector<vector<string> > inputStream;
 
     cout << "Your input file name: ";
     cin >> filename;
@@ -72,9 +72,9 @@ void printSemester(list <int> l, int i)
     cout << '\n'; 
 } 
 
-void printAllSemester(list<list<int>> l) 
+void printAllSemester(list<list<int> > l) 
 {
-    list<list<int>> :: iterator it;
+    list<list<int> > :: iterator it;
     int i = 1;
     for (it = l.begin(); it != l.end(); it++) {
         printSemester(*it, i++);
@@ -82,20 +82,20 @@ void printAllSemester(list<list<int>> l)
 }
 
 //****** Setup Function ******//
-void setupLabel(vector<vector<string>> inputStream) 
+void setupLabel(vector<vector<string> > inputStream) 
 {
     // setup for label
-    vector<vector<string>>:: iterator it;
+    vector<vector<string> >:: iterator it;
 
     for (it = inputStream.begin(); it != inputStream.end(); it++) {
         label.push_back(it->at(0));
     }
 }
 
-vector<vector<int>> setupConfig(vector<vector<string>> inputStream)
+vector<vector<int> > setupConfig(vector<vector<string> > inputStream)
 {
     // setup for graph configuration
-    vector<vector<int>> graphConfig;
+    vector<vector<int> > graphConfig;
     vector<string> thisLine;
     string prereq;
     int i, j;
@@ -113,10 +113,10 @@ vector<vector<int>> setupConfig(vector<vector<string>> inputStream)
     return graphConfig;
 }
 
-vector<vector<int>> setup() 
+vector<vector<int> > setup() 
 {
     // setup function
-    vector<vector<string>> inputStream = inputFile();
+    vector<vector<string> > inputStream = inputFile();
 
     setupLabel(inputStream);
 
@@ -124,9 +124,9 @@ vector<vector<int>> setup()
 }
 
 //****** Solving Algorithm ******//
-list<list<int>> topologicalSort(Grape& G) 
+list<list<int> > topologicalSort(Grape& G) 
 {
-    list<list<int>> nextSemester;
+    list<list<int> > nextSemester;
 
     if (G.isEmpty()) {
         return nextSemester; // base-case, return empty list for empty graph
@@ -162,11 +162,11 @@ int main()
 {
     Grape G;
 
-    vector<vector<int>> graphConfig = setup();
+    vector<vector<int> > graphConfig = setup();
 
     G.configure(graphConfig);
 
-    list<list<int>> college = topologicalSort(G);
+    list<list<int> > college = topologicalSort(G);
 
     printAllSemester(college);
 

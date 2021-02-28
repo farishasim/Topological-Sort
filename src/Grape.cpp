@@ -132,7 +132,8 @@ void Grape::removeEdge(int n1, int n2)
 
 bool Grape::isEdge(int n1, int n2) 
 {
-    return this->isValid(n1) && this->isValid(n2) && isNode[n1] && isNode[n2] && this->get(n1, n2);
+    return this->isValid(n1) && this->isValid(n2) && 
+            isNode[n1] && isNode[n2] && this->get(n1, n2);
 }
 
 void Grape::print() 
@@ -234,7 +235,7 @@ void Grape::printPrecNode(int x)
     cout << "}";
 }
 
-void Grape::configure(vector<vector<int>> graphConfig) {
+void Grape::configure(vector<vector<int> > graphConfig) {
     if (graphConfig.size() > this->size) {
         // re-allocation if total nodes is bigger than graph size
         delete[] this->isNode;

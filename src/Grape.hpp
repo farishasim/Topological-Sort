@@ -47,7 +47,7 @@ public:
     void printSuccNode(int node);
     void printPrecNode(int node);
 
-    void configure(vector<vector<int>> );
+    void configure(vector<vector<int> > );
 };
 
 
