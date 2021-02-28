@@ -15,15 +15,15 @@ git clone https://github.com/farishasim/Topological-Sort.git
 - Anda bisa langsung menggunakan program (ada pada direktori `bin`) atau bisa juga melakukan compile terlebih dahulu. Jika ingin melakukan compile terhadap source-code program diperlukan compiler `g++`.
 - Compile program dapat dilakukan dengan menggunakan command berikut :
 ```
-g++ -o bin/Grape.o -c src/Grape.cpp
-g++ -o bin/maindish src/Food.cpp bin/Grape.o
+g++ -o bin/Grape.o -c src/13519050-Grape.cpp
+g++ -o bin/maindish src/13519050-main.cpp bin/Grape.o
 ```
 - atau
 ```
-g++ -o bin/Grape.o -c src/Grape.cpp
-g++ -std=c++11 -o bin/maindish src/Food.cpp bin/Grape.o
+g++ -o bin/Grape.o -c src/13519050-Grape.cpp
+g++ -std=c++11 -o bin/maindish src/13519050-main.cpp bin/Grape.o
 ```
-- Selain itu, pada folder bin juga sudah disediakan driver untuk kelas graf. Silahkan bereksplorasi dengan graf menggunakan driver tersebut. Compile driver dapat dilakukan dengan command yang sama, dengan mengganti `bin/maindish` menjadi `bin/driver` dan `src/Food.cpp` menjadi `src/Plate.cpp`
+- Selain itu, pada folder bin juga sudah disediakan driver untuk kelas graf. Silahkan bereksplorasi dengan graf menggunakan driver tersebut. Compile driver dapat dilakukan dengan command yang sama, dengan mengganti `bin/maindish` menjadi `bin/driver` dan `src/13519050-main.cpp` menjadi `src/13519050-Plate.cpp`
 
 ## Cara Penggunaan
 - Siapkan file input, masukkan ke folder `test` (beberapa file yang siap pakai sudah disediakan pada folder tersebut). File yang di-input haruslah berisi daftar mata kuliah yang menjamin DAG jika direpresentasikan ke dalam graf
